@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Beauty</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            padding-top: 70px;
+        }
+        .card-img-overlay {
+            background: rgba(0, 0, 0, 0.4);
+        }
+        form {
+            margin: 0 auto;
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header id="cabecalho">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Aura Beauty</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#inicio" class="nav-link active">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#servicos" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrossel -->
+    <section id="inicio" class="mt-5">
+        <div class="container">
+            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="2000" class="carousel-item active">
+                        <img class="d-block w-100" src="img/carousel0.jpg" alt="Imagem 1">
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img class="d-block w-100" src="img/carousel_2.jpg" alt="Imagem 2">
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img class="d-block w-100" src="img/sombrancelha.jpg" alt="Imagem 3">
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img class="d-block w-100" src="img/carousel1.jpg" alt="Imagem 4">
+                    </div>
+                    <div data-bs-interval="2000" class="carousel-item">
+                        <img class="d-block w-100" src="img/carousel4.jpg" alt="Imagem 5">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-exemplo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-exemplo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="container my-5" id="servicos">
+        <h2 class="mb-4">Serviços</h2>
+        <div class="container">
+            <nav class="nav nav-pills mb-4">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#aba1" type="button">Manicure</button>
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#aba2" type="button">Sobrancelhas</button>
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#aba3" type="button">Cílios</button>
+            </nav>
+            <div class="tab-content">
+                <!-- Aba 1: Manicure -->
+                <div class="tab-pane fade show active" id="aba1">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-bg-dark h-100">
+                                <img src="img/manicure.jpg" class="card-img" alt="Esmaltação"style="object-fit: cover; height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <h5 class="card-title">Esmaltação</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-bg-dark h-100">
+                                <img src="img/esmaltação_em_gel.jpg" class="card-img" alt="Unhas em Gel"style="object-fit: cover; height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <h5 class="card-title">Unhas em Gel</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-bg-dark h-100">
+                                <img src="img/pedicure.jpg" class="card-img" alt="Pedicure"style="object-fit: cover; height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <h5 class="card-title">Pedicure</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Aba 2: Sobrancelhas -->
+                <div class="tab-pane fade" id="aba2">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-bg-dark h-100">
+                                <img src="img/sombrancelha.jpg" class="card-img" alt="Design de Sobrancelhas"style="object-fit: cover; height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <h5 class="card-title">Design de Sobrancelhas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-bg-dark h-100">
+                                <img src="img/micropgmentacao.jpg" class="card-img" alt="Micropigmentação"style="object-fit: cover; height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <h5 class="card-title">Micropigmentação de Sobrancelhas</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Aba 3: Cílios -->
+                <div class="tab-pane fade" id="aba3">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-bg-dark h-100">
+                                <img src="img/carousel1.jpg" class="card-img" alt="Extensão de Cílios"style="object-fit: cover; height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <h5 class="card-title">Extensão de Cílios</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card text-bg-dark h-100">
+                                <img src="img/cilios1.jpg" class="card-img" alt="Lifting de Cílios"style="object-fit: cover; height: 300px;">
+                                <div class="card-img-overlay d-flex align-items-end">
+                                    <h5 class="card-title">Lifting de Cílios</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Adicione mais itens conforme necessário -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="container my-5" id="contato">
+        <h2 class="mb-4">Contato</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Endereço de Email</label>
+                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="assunto" class="form-label">Assunto</label>
+                <input type="text" class="form-control" id="assunto" placeholder="Assunto da mensagem" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
